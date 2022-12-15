@@ -6,6 +6,8 @@
 
 Установить minikube можно по [инструкции](https://minikube.sigs.k8s.io/docs/start/).
 
+Создать кластер в vk cloud можно по [инструкции](https://mcs.mail.ru/docs/ru/base/k8s/operations/create-cluster/create-webui).
+
 В данном задании предлагается развернуть простое http-приложение в kubernetes, развернуть для него автомасштабирование и подать нагрузку для демонстрации работы.
 
 *В папке example описан пример выполнения этого задания.*
