@@ -1,0 +1,26 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: time-service-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: time-service
+  template:
+    metadata:
+      labels:
+        app: time-service
+    spec:
+      containers:
+        - image: itmo-example-app:latest
+          name: time-service
+          imagePullPolicy: Never
+          ports:
+          - containerPort: 8080
+          resources:
+            requests:
+              cpu: "150m"
+            limits:
+              cpu: "200m"
