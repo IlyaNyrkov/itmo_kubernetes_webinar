@@ -14,7 +14,9 @@ spec:
         app: time-service
     spec:
       containers:
-        - image: 146.185.242.65:5000/itmo-example-app:latest
+      # перед этим надо запушить образ в private registry командой 
+      # docker image push <адрес private registry>/itmo-example-app
+        - image: <адрес private registry>/itmo-example-app:latest
           name: itmo-example-app
           ports:
           - containerPort: 8080

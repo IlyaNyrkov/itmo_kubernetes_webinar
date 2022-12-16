@@ -198,7 +198,7 @@ kubectl run load-generator --image=busybox -- /bin/sh -c "while true; do wget -q
 kubectl get hpa time-service-deployment
 ```
 
-увидим примерно следующее:
+Увидим примерно следующее:
 
 ```shell
 NAME                      REFERENCE                            TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
@@ -220,7 +220,7 @@ time-service-deployment-65bb69c589-ml56p   1/1     Running   0          23m
 time-service-deployment-65bb69c589-qklkk   1/1     Running   0          27m
 ```
 
-Под load-generator можно просто удалить по завершению тестирования:
+Под load-generator можно просто удалить по завершении тестирования:
 
 ```bash
 kubectl delete pod load-generator
