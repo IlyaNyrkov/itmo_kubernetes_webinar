@@ -6,7 +6,7 @@
 
 1) Сборка docker-образа приложения
 
-Собираем docker образ приложения командой:
+Переходим в папку example/app и собираем docker образ приложения командой:
 
 ```bash
 docker build . -t itmo-example-app

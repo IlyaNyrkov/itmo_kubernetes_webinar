@@ -8,6 +8,8 @@
 
 Создать кластер в vk cloud можно по [инструкции](https://mcs.mail.ru/docs/ru/base/k8s/operations/create-cluster/create-webui).
 
+Установить docker можно по [инструкции](https://docs.docker.com/engine/install/ubuntu/).
+
 В данном задании предлагается развернуть простое http-приложение в kubernetes, развернуть для него автомасштабирование и подать нагрузку для демонстрации работы.
 
 *В папке example описан пример выполнения этого задания.*
@@ -20,7 +22,7 @@
 
 3) Подготовить любое приложение с минимум одной http-ручкой, которую можно вызвать в рамках тестирования утилитами для отправки HTTP запросов вроде curl, wget, HTTPie, Postman.
 
-4) Собрать docker-образ приложения и добавить в minikube / [docker registry](https://mcs.mail.ru/docs/ru/base/k8s/connect/docker-registry) кластера в vk cloud.
+4) Собрать docker-образ приложения и добавить в minikube / [docker registry](https://mcs.mail.ru/docs/ru/base/k8s/connect/docker-registry) кластера в vk cloud. (не забываем добавить адрес registry в /etc/docker/daemon.js)
 
 5) Написать манифест для деплоймента приложения в кластер. В деплойменте должен быть описан репликасет с образом приложения, который был добавлен ранее.
 
